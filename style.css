@@ -440,3 +440,47 @@ body {
     }
 
 }
+
+/* =========================
+   TOUCH RIPPLE EFFECT
+   ========================= */
+
+
+.ripple {
+
+    position:absolute;
+
+    border-radius:50%;
+
+    background:rgba(255,170,200,0.45);
+
+    transform:scale(0);
+
+    animation:rippleEffect 0.7s ease-out;
+
+    pointer-events:none;
+
+}
+
+
+
+@keyframes rippleEffect {
+
+    from {
+
+        transform:scale(0);
+
+        opacity:0.8;
+
+    }
+
+
+    to {
+
+        transform:scale(4);
+
+        opacity:0;
+
+    }
+
+}
