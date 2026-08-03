@@ -1,1 +1,295 @@
-/* For My Iu - Design */
+/* =========================
+   FOR MY IU - MAIN DESIGN
+   ========================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Nunito", "Arial", sans-serif;
+    overflow: hidden;
+    background: #fff8fb;
+    color: #5c4650;
+}
+
+
+#app {
+    width: 100%;
+    height: 100vh;
+}
+
+
+/* =========================
+   SCREEN CONTROL
+   ========================= */
+
+.screen {
+    width: 100%;
+    height: 100vh;
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.screen.active {
+    display: flex;
+}
+
+
+/* =========================
+   PASS SCREEN
+   ========================= */
+
+#pass-screen {
+    background:
+    linear-gradient(
+        180deg,
+        #fff8fb,
+        #ffeef5
+    );
+}
+
+
+.pass-box {
+    width: 85%;
+    max-width: 420px;
+
+    text-align: center;
+    z-index: 2;
+}
+
+
+.pass-box h1 {
+
+    font-size: 22px;
+    font-weight: 600;
+
+    color: #c77b99;
+
+    margin-bottom: 35px;
+
+    letter-spacing: 0.5px;
+}
+
+
+#password {
+
+    width: 100%;
+
+    padding: 16px 20px;
+
+    border-radius: 30px;
+
+    border: 1px solid #f5c8d9;
+
+    background: rgba(255,255,255,0.8);
+
+    text-align: center;
+
+    font-size: 16px;
+
+    outline: none;
+
+    color: #a75c7b;
+
+}
+
+
+#password::placeholder {
+
+    color: #d7a8ba;
+
+}
+
+
+#enter-btn {
+
+    margin-top: 22px;
+
+    padding: 12px 45px;
+
+    border-radius: 30px;
+
+    border: none;
+
+    background: #f6a8c3;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    box-shadow:
+    0 8px 20px rgba(246,168,195,0.3);
+
+}
+
+
+#wrong-text {
+
+    margin-top: 15px;
+
+    opacity: 0;
+
+    color: #e88aa5;
+
+}
+
+
+/* =========================
+   MESSAGE SCREEN
+   ========================= */
+
+
+#message-screen {
+
+    background:
+    linear-gradient(
+        180deg,
+        #fff8fb,
+        #ffeef5
+    );
+
+}
+
+
+#message-screen h1 {
+
+    color:#d886a5;
+
+    font-size:28px;
+
+    animation: appear 1s ease;
+
+}
+
+
+/* =========================
+   INTRO
+   ========================= */
+
+#intro-screen {
+
+    background:#fff8fb;
+
+}
+
+
+#intro-text {
+
+    width:80%;
+
+    text-align:center;
+
+    font-size:22px;
+
+    line-height:1.8;
+
+    color:#b86f8b;
+
+}
+
+
+/* =========================
+   HOME
+   ========================= */
+
+
+#home-screen {
+
+    flex-direction:column;
+
+    background:
+    linear-gradient(
+        180deg,
+        #fff8fb,
+        #fff1f6
+    );
+
+}
+
+
+.menu {
+
+    width:85%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:22px;
+
+}
+
+
+.menu-item {
+
+    padding:22px 20px;
+
+    background:rgba(255,255,255,0.85);
+
+    border-radius:25px;
+
+    text-align:center;
+
+    font-size:16px;
+
+    color:#9d627d;
+
+    box-shadow:
+
+    0 10px 25px rgba(220,150,180,0.15);
+
+}
+
+
+.menu-item.special {
+
+    background:#ffe1ec;
+
+    color:#c76c91;
+
+}
+
+
+.hint {
+
+    margin-top:35px;
+
+    font-size:14px;
+
+    color:#d3a5b8;
+
+}
+
+
+/* =========================
+   ANIMATION
+   ========================= */
+
+
+@keyframes appear {
+
+    from {
+
+        opacity:0;
+        transform:translateY(15px);
+
+    }
+
+    to {
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
