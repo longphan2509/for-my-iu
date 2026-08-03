@@ -239,3 +239,60 @@ enterBtn.addEventListener(
 
 
 });
+
+/* =========================
+   BUTTON RIPPLE
+   ========================= */
+
+
+const roomButtons = document.querySelectorAll(".room-btn");
+
+
+roomButtons.forEach(button => {
+
+
+    button.addEventListener("click", function(e){
+
+
+        const circle = document.createElement("span");
+
+
+        const rect = this.getBoundingClientRect();
+
+
+        const size = Math.max(
+            rect.width,
+            rect.height
+        );
+
+
+        circle.style.width = size + "px";
+
+        circle.style.height = size + "px";
+
+
+        circle.style.left =
+        e.clientX - rect.left - size/2 + "px";
+
+
+        circle.style.top =
+        e.clientY - rect.top - size/2 + "px";
+
+
+        circle.className = "ripple";
+
+
+        this.appendChild(circle);
+
+
+        setTimeout(()=>{
+
+            circle.remove();
+
+        },700);
+
+
+    });
+
+
+});
