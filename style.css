@@ -484,3 +484,76 @@ body {
     }
 
 }
+
+/* =========================
+   ROOM STYLE
+   ========================= */
+
+
+.room {
+
+    background:
+
+    linear-gradient(
+        180deg,
+        #fff8fb,
+        #ffeef5
+    );
+
+}
+
+
+
+.room-content {
+
+    width:85%;
+
+    max-width:420px;
+
+    text-align:center;
+
+}
+
+
+
+.room-content h2 {
+
+    color:#c77b99;
+
+    font-size:24px;
+
+    margin-bottom:30px;
+
+}
+
+
+
+.room-content p {
+
+    color:#9d7184;
+
+    line-height:1.8;
+
+}
+
+
+
+.back-btn {
+
+
+    margin-top:40px;
+
+    padding:12px 35px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:#f6a8c3;
+
+    color:white;
+
+    font-size:15px;
+
+
+}
