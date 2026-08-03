@@ -355,19 +355,14 @@ roomButtons.forEach(button => {
    ========================= */
 
 
-const backButtons =
-document.querySelectorAll(".back-btn");
+document.addEventListener("click", function(e){
 
 
-
-backButtons.forEach(button=>{
-
-
-    button.addEventListener("click", function(){
+    if(e.target.classList.contains("back-btn")){
 
 
         const currentRoom =
-        this.closest(".room");
+        e.target.closest(".room");
 
 
         currentRoom.classList.remove("active");
@@ -375,14 +370,12 @@ backButtons.forEach(button=>{
 
         setTimeout(()=>{
 
-
             homeScreen.classList.add("active");
-
 
         },400);
 
 
-    });
+    }
 
 
 });
