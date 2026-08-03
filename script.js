@@ -296,3 +296,93 @@ roomButtons.forEach(button => {
 
 
 });
+
+/* =========================
+   OPEN ROOMS
+   ========================= */
+
+
+const rooms = {
+
+    talk: document.getElementById("talk-room"),
+
+    voice: document.getElementById("voice-room"),
+
+    reply: document.getElementById("reply-room"),
+
+    gift: document.getElementById("gift-room")
+
+};
+
+
+
+roomButtons.forEach(button => {
+
+
+    button.addEventListener("click", function(){
+
+
+        const roomName = this.dataset.room;
+
+
+        if(rooms[roomName]){
+
+
+            homeScreen.classList.remove("active");
+
+
+            setTimeout(()=>{
+
+
+                rooms[roomName].classList.add("active");
+
+
+            },400);
+
+
+        }
+
+
+    });
+
+
+});
+
+
+
+/* =========================
+   BACK TO HOME
+   ========================= */
+
+
+const backButtons =
+document.querySelectorAll(".back-btn");
+
+
+
+backButtons.forEach(button=>{
+
+
+    button.addEventListener("click", function(){
+
+
+        const currentRoom =
+        this.closest(".room");
+
+
+        currentRoom.classList.remove("active");
+
+
+        setTimeout(()=>{
+
+
+            homeScreen.classList.add("active");
+
+
+        },400);
+
+
+    });
+
+
+});
