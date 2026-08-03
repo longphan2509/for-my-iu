@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>For My Iu</title>
 
     <link rel="stylesheet" href="style.css">
@@ -10,11 +11,91 @@
 
 <body>
 
-    <div id="app">
-        
-    </div>
+<div id="app">
 
-    <script src="script.js"></script>
+    <!-- MÀN NHẬP PASS -->
+    <section id="pass-screen" class="screen active">
+
+        <div class="hearts"></div>
+
+        <div class="pass-box">
+
+            <h1>
+                Pass là cách anh vẫn hay gọi em íiiiii
+            </h1>
+
+            <input 
+                id="password"
+                type="password"
+                placeholder="nhớ không đấy..."
+            >
+
+            <button id="enter-btn">
+                ôke
+            </button>
+
+            <p id="wrong-text">
+                ?????
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- MÀN SAU KHI NHẬP ĐÚNG -->
+    <section id="message-screen" class="screen">
+
+        <h1>
+            Iu ơi anh bảo 🙁
+        </h1>
+
+    </section>
+
+
+    <!-- PHẦN INTRO -->
+    <section id="intro-screen" class="screen">
+
+        <p id="intro-text"></p>
+
+    </section>
+
+
+    <!-- HOME -->
+    <section id="home-screen" class="screen">
+
+        <div class="menu">
+
+            <div class="menu-item">
+                📝 Những gì anh muốn nói…
+            </div>
+
+            <div class="menu-item">
+                🎙️ Em có muốn nghe giọng anh không?
+            </div>
+
+            <div class="menu-item">
+                💬 Nếu em muốn nói gì với anh thì ở đây
+            </div>
+
+            <div class="menu-item special">
+                🎁 DÀNH CHO EM
+            </div>
+
+        </div>
+
+
+        <p class="hint">
+            Nhớ chọn lần lượt nhaaa...
+        </p>
+
+    </section>
+
+
+</div>
+
+
+<script src="script.js"></script>
 
 </body>
 </html>
