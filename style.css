@@ -557,3 +557,18 @@ body {
 
 
 }
+
+.room-content {
+    display: block !important;
+    position: relative;
+    z-index: 999;
+    color: #c77b99 !important;
+}
+
+.room-content h2,
+.room-content p,
+.back-btn {
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
